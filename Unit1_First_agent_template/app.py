@@ -28,6 +28,7 @@ def get_current_time_in_timezone(timezone: str) -> str:
     Args:
         timezone: A string representing a valid timezone (e.g., 'America/New_York').
     """
+
     try:
         # Create timezone object
         tz = pytz.timezone(timezone)
@@ -38,16 +39,31 @@ def get_current_time_in_timezone(timezone: str) -> str:
         return f"Error fetching time for timezone '{timezone}': {str(e)}"
 
 
+@tool
+def get_vietnam_gold_price(provider: str) -> str:
+    """Searches for current gold price from a specific Vietnamese provider.
+    Args:
+        provider: Gold provider name (e.g., 'SJC', 'PNJ', 'DOJI')
+    """
+    search_tool = DuckDuckGoSearchTool()
+    provider = provider.upper()
+    if provider not in ["SJC", "PNJ", "DOJI"]:
+        return "Please specify a valid provider: SJC, PNJ, or DOJI"
+    search_query = f"giá vàng {provider} hôm nay"
+    search_result = search_tool(search_query)
+    return f"Search results for {provider} gold price: {search_result}"
+
+
 final_answer = FinalAnswerTool()
 
-# If the agent does not answer, the model is overloaded,
-# please use another model or the following Hugging Face Endpoint that also contains qwen2.5 coder:
+# If the agent does not answer, the model is overloaded, please use another model or the following Hugging Face Endpoint that also contains qwen2.5 coder:
 # model_id='https://pflgm2locj2t89co.us-east-1.aws.endpoints.huggingface.cloud'
 
 model = HfApiModel(
     max_tokens=2096,
     temperature=0.5,
-    model_id="Qwen/Qwen2.5-Coder-32B-Instruct",  # it is possible that this model may be overloaded
+    # model_id='Qwen/Qwen2.5-Coder-32B-Instruct',# it is possible that this model may be overloaded
+    model_id="https://pflgm2locj2t89co.us-east-1.aws.endpoints.huggingface.cloud",
     custom_role_conversions=None,
 )
 
@@ -60,7 +76,11 @@ with open("prompts.yaml", "r") as stream:
 
 agent = CodeAgent(
     model=model,
-    tools=[final_answer],  ## add your tools here (don't remove final answer)
+    tools=[
+        final_answer,
+        get_current_time_in_timezone,
+        get_vietnam_gold_price,
+    ],  ## add your tools here (don't remove final answer)
     max_steps=6,
     verbosity_level=1,
     grammar=None,

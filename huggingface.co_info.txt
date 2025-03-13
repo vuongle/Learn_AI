@@ -1,0 +1,18 @@
+Intro
+	Learn AI Agents and get certification for free
+
+Link
+	https://huggingface.co/learn/agents-course/unit0/onboarding
+
+Accounts
+	Hugging Face Account: https://huggingface.co/
+	vuonglg@gmail.com / Vuongle86!
+	username:vuongle
+	fullname: Vuong Le
+	
+	Discord Community: https://discord.com/channels/@me
+	https://discord.com/channels/879548962464493619/1339556954162462851
+	vuonglg@gmail.com / Vuongle86!
+
+Additional reference articles
+	https://200lab.io/blog/ai-agent-la-gi
