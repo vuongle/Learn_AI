@@ -1,6 +1,8 @@
 from smolagents import CodeAgent, DuckDuckGoSearchTool, HfApiModel, VisitWebpageTool
 
-model = HfApiModel(model_id="facebook/opt-125m")
+model = HfApiModel(
+    model_id="https://pflgm2locj2t89co.us-east-1.aws.endpoints.huggingface.cloud"
+)
 
 search_agent = CodeAgent(
     model=model,

@@ -1,9 +1,8 @@
 # This file is followed by this video: https://www.youtube.com/watch?v=UYEBMEAxIfA
-# up to: 40:51
 # repo: https://github.com/XamHans/smolagents-course
 # -----------------------------------------------------------------------------
 
-from smolagents import CodeAgent, DuckDuckGoSearchTool, HfApiModel, tool
+from smolagents import CodeAgent, GradioUI, HfApiModel, tool
 
 
 @tool
@@ -49,16 +48,19 @@ agent = CodeAgent(
     model=model,
     additional_authorized_imports=["matplotlib"],
     verbosity_level=2,
+    name="WeatherAnalysisAgent",
+    description="Analyzes weather data and makes predictions",
 )
 
 # Run the agent with a simple task
 print("Running weather analysis agent...")
-response = agent.run(
-    """
-    Get the weather data for Tokyo and:
-    1. Calculate the average temperature
-    2. Count rainy days
-    3. Make a simple bar chart of daily temperatures
-    4. Save the chart to 'tokyo_temps.png' (don't use plt.show())
-    """
-)
+# response = agent.run(
+#     """
+#     Get the weather data for Tokyo and:
+#     1. Calculate the average temperature
+#     2. Count rainy days
+#     3. Make a simple bar chart of daily temperatures
+#     4. Save the chart to 'tokyo_temps.png' (don't use plt.show())
+#     """
+# )
+GradioUI(agent).launch()
