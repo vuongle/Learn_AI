@@ -37,5 +37,14 @@ pip freeze > requirements.txt
 pip3 install -r requirements.txt
 ```
 
+If after running above command, packages are not shown in site_packes, do the following:
+- Re-select the Python Interpreter
+- Run one of the following command
+```
+python -m pip install -r requirements.txt
+or
+pip install --no-cache-dir -r requirements.txt
+```
+
 ### Exit virtual environment
 deactivate
