@@ -1,0 +1,69 @@
+1. AI agent
+AI agent (tác nhân AI) là một công cụ sử dụng trí tuệ nhân tạo để thực hiện nhiều nhiệm vụ thay cho con người, với khả năng vượt trội hơn so với một chatbot thông thường. 
+Chẳng hạn, nó có thể giúp bạn lập bảng kê chi phí, đặt vé máy bay, đặt bàn tại nhà hàng, hoặc thậm chí viết và duy trì mã lập trình.
+
+Hiện nay, tác nhân AI vẫn đang trong giai đoạn phát triển và khái niệm này có thể mang ý nghĩa khác nhau tùy vào từng người. Hạ tầng công nghệ hỗ trợ các AI agent vẫn đang 
+được hoàn thiện để có thể khai thác trọn vẹn tiềm năng của nó. Tuy nhiên, về bản chất, đây là một hệ thống tự động có thể kết hợp nhiều mô hình AI khác nhau để thực hiện các 
+nhiệm vụ phức tạp theo từng bước. Ẩn bớt
+
+
+2. Chain of Thought
+Đối với những câu hỏi đơn giản, con người có thể trả lời ngay lập tức mà không cần suy nghĩ nhiều, chẳng hạn như “Con vật nào cao hơn, hươu cao cổ hay mèo?”. Nhưng với những vấn đề phức tạp hơn, 
+chúng ta thường phải ghi chép lại để tìm ra đáp án. Ví dụ, nếu một người nông dân có gà và bò, tổng cộng có 40 cái đầu và 120 cái chân, ta cần viết ra một phương trình để tính toán (20 con gà và 20 con bò).
+
+Trong bối cảnh AI, Chain of Thought (chuỗi tư duy) là một phương pháp suy luận cho các mô hình ngôn ngữ lớn (Large Language Model – LLM), giúp chia nhỏ một vấn đề thành các bước trung gian để cải 
+thiện chất lượng kết quả cuối cùng.
+
+Quá trình này thường mất nhiều thời gian hơn, nhưng giúp AI tạo ra câu trả lời chính xác hơn, đặc biệt là trong các bài toán logic hoặc lập trình. Các mô hình suy luận này được phát triển 
+từ các mô hình ngôn ngữ lớn truyền thống và tối ưu hóa nhờ phương pháp Reinforcement Learning (học tăng cường). Ẩn bớt
+
+
+3. Deep Learning
+Deep Learning (học sâu) là một nhánh của Machine Learning (học máy) tự cải tiến, trong đó các thuật toán AI được thiết kế theo cấu trúc mạng nơ-ron nhân tạo nhiều lớp. Điều này giúp AI có thể 
+xác định mối liên hệ phức tạp hơn so với các hệ thống học máy đơn giản hơn như mô hình tuyến tính hay cây quyết định.
+
+Cấu trúc của các thuật toán học sâu lấy cảm hứng từ cách các tế bào thần kinh trong não người kết nối với nhau. Nhờ đó, các mô hình AI học sâu có thể tự phát hiện đặc điểm quan trọng trong dữ liệu 
+mà không cần con người xác định trước.
+
+Đồng thời, hệ thống có thể tự học từ sai sót và cải thiện kết quả thông qua quá trình lặp đi lặp lại. Tuy nhiên, mô hình học sâu yêu cầu một lượng dữ liệu khổng lồ (hàng triệu điểm dữ liệu trở lên) 
+để đạt kết quả tốt. Quá trình đào tạo cũng thường kéo dài và tốn kém hơn so với các thuật toán học máy thông thường. Ẩn bớt
+
+
+4. Fine-tuning
+Fine-tuning (tinh chỉnh mô hình) đề cập đến quá trình đào tạo thêm một mô hình AI để tối ưu hóa hiệu suất cho một nhiệm vụ cụ thể hơn so với phạm vi đào tạo ban đầu. Quá trình này thường được thực hiện 
+bằng cách cung cấp một bộ dữ liệu chuyên biệt, phù hợp với mục tiêu ứng dụng cụ thể.
+
+Nhiều startup AI hiện nay sử dụng mô hình ngôn ngữ lớn làm nền tảng để phát triển sản phẩm thương mại. Tuy nhiên, họ cố gắng nâng cao tính hữu dụng của AI bằng cách tinh chỉnh mô hình dựa trên dữ liệu 
+và kiến thức chuyên ngành của riêng mình. Ẩn bớt
+
+
+5. Large Language Model (LLM)
+Mô hình ngôn ngữ lớn (LLM) là loại mô hình AI được sử dụng trong các trợ lý AI phổ biến như ChatGPT, Claude, Gemini của Google, AI Llama của Meta, Microsoft Copilot, hay Le Chat của Mistral. 
+Khi bạn trò chuyện với một trợ lý AI, bạn đang tương tác với một mô hình ngôn ngữ lớn, có thể xử lý yêu cầu trực tiếp hoặc kết hợp với các công cụ khác như tìm kiếm web hoặc trình thông dịch mã.
+
+Các trợ lý AI và LLM có thể có tên gọi khác nhau. Ví dụ, GPT là mô hình ngôn ngữ lớn của OpenAI, còn ChatGPT là sản phẩm trợ lý AI sử dụng mô hình này.
+
+LLM hoạt động dựa trên mạng nơ-ron sâu với hàng tỷ tham số số học (hay còn gọi là trọng số). Chúng học các mối quan hệ giữa từ và cụm từ để tạo ra một bản đồ ngôn ngữ đa chiều. Các mô hình này 
+được đào tạo từ hàng tỷ cuốn sách, bài báo và văn bản. Khi nhận một yêu cầu, LLM tạo ra một mô hình ngôn ngữ dự đoán từ tiếp theo có khả năng cao nhất để tạo ra câu trả lời hợp lý. Ẩn bớt
+
+
+
+6. Neural network
+Neural network (mạng nơ-ron nhân tạo) là cấu trúc thuật toán nhiều lớp tạo nền tảng cho học sâu và đóng vai trò quan trọng trong sự bùng nổ của AI tạo sinh hiện nay, đặc biệt 
+là với các mô hình ngôn ngữ lớn.
+
+Ý tưởng mô phỏng mạng nơ-ron sinh học để thiết kế thuật toán xử lý dữ liệu đã có từ những năm 1940. Tuy nhiên, chỉ đến khi công nghệ GPU phát triển mạnh nhờ ngành công nghiệp trò chơi điện tử, 
+các mạng nơ-ron mới thực sự phát huy tiềm năng. GPU giúp đào tạo các thuật toán với số lượng lớp nhiều hơn đáng kể, mang lại hiệu suất vượt trội trong các lĩnh vực như nhận diện giọng nói, 
+điều hướng tự động, và khám phá thuốc mới. Ẩn bớt
+
+
+7. Weights
+Weights (trọng số) là yếu tố cốt lõi trong quá trình đào tạo AI, quyết định mức độ quan trọng của từng đặc điểm trong dữ liệu huấn luyện.
+
+Hiểu đơn giản, trọng số là các tham số số học xác định yếu tố nào quan trọng nhất đối với nhiệm vụ đào tạo. Chúng hoạt động bằng cách nhân các giá trị đầu vào với trọng số tương ứng. 
+Ban đầu, mô hình AI được thiết lập với các trọng số ngẫu nhiên. Tuy nhiên, trong quá trình đào tạo, các trọng số này sẽ điều chỉnh dần để tạo ra đầu ra phù hợp hơn với mục tiêu.
+
+Ví dụ, một mô hình AI dự đoán giá nhà có thể sử dụng trọng số để đánh giá mức độ ảnh hưởng của các yếu tố như số phòng ngủ, số phòng tắm, kiểu nhà (biệt lập hay liền kề), có chỗ đậu xe hay không… 
+Các trọng số cuối cùng sẽ phản ánh mức độ ảnh hưởng của từng yếu tố đến giá trị của bất động sản. Ẩn bớt
+
+

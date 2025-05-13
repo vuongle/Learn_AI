@@ -1,0 +1,53 @@
+prompts giúp biến ChatGPT thành trợ lí cá nhân của bạn
+1. Sắp xếp ngày làm việc  
+	Tôi là [mô tả ngắn gọn bối cảnh và vấn đề].  
+	Tôi cần lập lịch cho ngày [ngày] với giờ làm việc từ [giờ bắt đầu] đến [giờ kết thúc].  
+	Các cam kết hiện có:  
+	  • [liệt kê cuộc họp/cuộc hẹn cùng thời gian]  
+	Các nhiệm vụ cần hoàn thành (có thứ tự ưu tiên):  
+	  1. [Công việc A – ưu tiên cao]  
+	  2. [Công việc B – ưu tiên trung bình]  
+	Vui lòng xây dựng lịch trình chi tiết, bao gồm:  
+	  • Thời gian nghỉ và ăn uống  
+	  • Thứ tự tối ưu để hoàn thành công việc  
+	  • Khung giờ tập trung cho dự án [tên dự án].  
+	Kết quả mong muốn: [ví dụ: bảng timeline, checklist ví dụ cụ thể…].
+
+2. Soạn email chuyên nghiệp  
+	Tôi là [bối cảnh/ngành nghề].  
+	Giúp tôi soạn email gửi [đối tượng/người nhận] về [chủ đề].  
+	Phong cách: [trang trọng/ngắn gọn/thuyết phục].  
+	Những điểm chính cần nêu:  
+	  • [Điểm 1]  
+	  • [Điểm 2]  
+	Kết quả mong muốn: [ví dụ: nhận phản hồi, chốt cuộc họp…].  
+	Email dài khoảng [số từ/đoạn], bao gồm: dòng tiêu đề rõ ràng, lời chào, nội dung súc tích, kết thư chuyên nghiệp.  
+	Nếu cần, hãy lồng ghép bối cảnh tương tác trước đó: [tóm tắt ngắn].  
+	Xuất file: [ví dụ: bản nháp + hai biến thể tiêu đề].
+	
+3. Phân tích và đưa ra quyết định  
+	Tôi đang cân nhắc giữa [lựa chọn A] và [lựa chọn B] cho [tình huống].  
+	Ưu tiên của tôi (theo thứ tự):  
+	  1. [ưu tiên 1]  
+	  2. [ưu tiên 2]  
+	Hạn chế hiện tại: [liệt kê các ràng buộc].  
+	Thời hạn quyết định: [ngày/khung thời gian].  
+	Vui lòng:  
+	  • Phân tích cả hai phương án dựa trên ưu tiên  
+	  • Liệt kê ưu – nhược điểm, rủi ro tiềm ẩn  
+	  • Đề xuất khung quyết định giúp tôi chọn phương án tối ưu  
+	Trình bày: [ví dụ: bảng so sánh + khung ra quyết định mẫu].
+
+4. Quản lý dự án & theo dõi tiến độ  
+	Tôi đang quản lý dự án [tên dự án] với mục tiêu [mục tiêu] và hạn chót [ngày].  
+	Đội ngũ gồm [số lượng] thành viên với vai trò:  
+	  • [Tên – Chức danh]  
+	  • …  
+	Ngân sách: [số tiền].  
+	Hãy:  
+	  1. Phân chia dự án thành giai đoạn và sản phẩm đầu ra cụ thể  
+	  2. Đề xuất timeline và mốc quan trọng (milestones)  
+	  3. Xác định điểm nghẽn tiềm ẩn và công cụ cộng tác  
+	  4. Tạo mẫu (template) theo dõi tiến độ  
+	  5. Gợi ý cách báo cáo cập nhật cho các bên liên quan  
+	Trình bày: [ví dụ: roadmap + template Excel/CSV].
