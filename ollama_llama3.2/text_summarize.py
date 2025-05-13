@@ -1,7 +1,13 @@
-import requests
-from bs4 import BeautifulSoup
+"""
+This module provides functionality to summarize website content using Ollama API.
+The Ollama API runs the local model that has been downloaded before.
+It extracts text content from web pages and generates concise summaries.
+"""
+
 import ollama
+import requests
 import streamlit as st
+from bs4 import BeautifulSoup
 
 MODEL = "llama3.2"
 

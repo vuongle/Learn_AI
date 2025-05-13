@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "postgres_13_alpine": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgres://postgres:postgres@localhost:5432/url_list"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+# Your rule content
+
+- Always use kebal-case for new component file
