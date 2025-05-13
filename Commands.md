@@ -12,7 +12,7 @@ python3 -m venv <env name>
 #### Windows
 
 ```
-.\<env name>\Scripts\activate.bat
+.\<env name>\Scripts\activate
 ```
 
 #### MacOS
