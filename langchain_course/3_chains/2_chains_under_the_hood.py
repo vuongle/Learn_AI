@@ -2,7 +2,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnableLambda, RunnableSequence
 from langchain_ollama import ChatOllama
 
-# Create a ChatOpenAI model
+# Create a model
 model = ChatOllama(model="llama3.2:3b")
 
 # Create a ChatPromptTemplate using a template string
