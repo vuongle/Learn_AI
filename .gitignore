@@ -176,3 +176,4 @@ cython_debug/
 .pypirc
 
 keys.local.txt
+langchain_course/4_rag/db/**

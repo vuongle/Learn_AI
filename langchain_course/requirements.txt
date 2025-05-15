@@ -3,3 +3,6 @@ python-dotenv
 langchain
 langchain-community
 langchain-ollama
+langchain_text_splitters
+langchain-chroma
+sentence-transformers
