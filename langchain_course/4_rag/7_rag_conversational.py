@@ -52,6 +52,14 @@ contextualize_q_prompt = ChatPromptTemplate.from_messages(
 
 # Create a history-aware retriever that takes conversation history and returns documents.
 # This uses the LLM to help reformulate the question based on chat history
+# Explanation:
+# 1. It defines a system prompt that instructs the LLM to reformulate questions based on chat history
+# 2. Creates a prompt template that includes the system prompt, chat history, and user input
+# 3. Creates a history-aware retriever that:
+#    - Takes the user's question and chat history
+#    - Uses the LLM to reformulate the question into a standalone query
+#    - Uses that reformulated query to retrieve relevant documents
+# This solves the problem of contextual questions like "Who wrote it?" after previously asking about a specific book.
 history_aware_retriever = create_history_aware_retriever(
     llm, retriever, contextualize_q_prompt
 )
@@ -80,9 +88,15 @@ qa_prompt = ChatPromptTemplate.from_messages(
 
 # Create a chain to combine documents for question answering
 # `create_stuff_documents_chain` feeds all retrieved context into the LLM
+# Explanation:
+# 1. Creates a system prompt for the question-answering task
+# 2. Creates a prompt template that includes the system prompt, chat history, and user input
+# 3. Creates a "stuff" documents chain that:
+#    - Takes the retrieved documents and "stuffs" them into the context
+#    - Uses the LLM to generate an answer based on the context and question
 question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
 
-# Create a retrieval chain that combines the history-aware retriever and the question answering chain
+# Create a retrieval chain that combines the history-aware retriever and the question answering chain into a complete RAG pipeline.
 rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
 
 
@@ -103,6 +117,14 @@ def continual_chat():
         chat_history.append(SystemMessage(content=result["answer"]))
 
 
+## The Complete Flow
+# When a user asks a question:
+# 1. The question and chat history are passed to the history-aware retriever
+# 2. The retriever uses the LLM to reformulate the question if needed (making it standalone)
+# 3. The reformulated question is used to retrieve relevant documents from the vector database
+# 4. The retrieved documents, original question, and chat history are passed to the question-answering chain
+# 5. The LLM generates an answer based on the retrieved context
+# 6. The answer is returned to the user and added to the chat history
 # Main function to start the continual chat
 if __name__ == "__main__":
     continual_chat()
